@@ -1,0 +1,17 @@
+#nav-menu {
+    display: flex;
+    justify-content: space-between;
+    width: 90%;
+    margin: auto;
+}
+
+#nav-menu>div:last-child {
+    display: flex;
+    width: 40%;
+    justify-content: space-between;
+}
+
+#nav-menu>div>h3 a {
+    text-decoration: none;
+    color: #ff6600;
+}
