@@ -1,0 +1,93 @@
+* {
+  margin: 0%;
+  padding: 0%;
+}
+
+.header {
+  background-color: black;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+  height: 90px;
+}
+
+.logo {
+  width: 70px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.logo img {
+  width: 70px;
+  border-radius: 50%;
+}
+
+.header-right {
+  width: 50%;
+  height: 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.links {
+  width: 60%;
+}
+
+.links ul {
+  display: flex;
+  justify-content: space-around;
+  list-style: none;
+  
+}
+
+.links ul li {
+  font-weight: 500;
+  color: black !important;
+  letter-spacing: 0.8px;
+  padding: 0 25px;
+  font-size: 18px;
+  border: 1px solid red;
+}
+
+.links ul li a {
+  text-decoration: none;
+  color: rgb(233, 220, 220);
+  
+}
+
+.connect {
+  width: 150px;
+  color: aliceblue;
+  background-color: transparent;
+  padding: 20px;
+  text-align: center;
+  border: 1px solid white;
+  font-size: 20px;
+  font-weight: 700;
+  transform: perspective(1px) translateZ(0);
+  transition: 0.5s;
+}
+
+.connect::before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  top: 0px;
+  left: 0px;
+  right: 0px;
+  bottom: 0;
+  background-color: rgb(255, 255, 255);
+  clip-path: inset(0 100% 0 0);
+  opacity: 1;
+  transition: 0.4s;
+}
+.connect:hover::before {
+  clip-path: inset(0 0 0 0);
+}
+.connect:hover {
+  color: black;
+  box-shadow: 0 0 0 10px rgba(250, 250, 250, 0.1);
+  cursor: pointer;
+}

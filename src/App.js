@@ -1,14 +1,16 @@
-import logo from './logo.svg';
+import React, { useState } from 'react';
 import './App.css';
+import { Navbar } from './components/Navbar';
+import { Section } from './components/Section';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        ravi shuru kar diya hai ab bina khatam kare rukega nahi
-      </header>
+    <div className='App'>
+     <Navbar/>
+     <Section/>
     </div>
-  );
+  )
+
 }
 
 export default App;
